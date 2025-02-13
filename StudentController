@@ -1,0 +1,23 @@
+@RestController
+public class StudentController {
+
+@Autowired
+Student s;
+Arraylist <Student> a= new Arraylist <Student>();
+public StudentController() {
+		p.add(new Student(1,"Sonali",18,788760));
+		p.add(new Student(2,"Rutuja",45,902201));
+		p.add(new Student(3,"Nikita",34,906754));
+		p.add(new Student(4,"Shraddha",22,841107));
+		p.add(new Student(5,"Wanve",55,749915));
+
+		
+	}
+	
+	
+	@GetMapping("allStudent")
+	public ArrayList<Student> allStudent(){
+		return a;
+
+}
+
